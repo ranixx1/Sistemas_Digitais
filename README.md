@@ -1,14 +1,14 @@
 # 🚀 Projetos de Circuitos Digitais - Prof. Bráulio 🚀
 
-Bem-vindo(a) ao meu repositório de projetos para a disciplina de **Circuitos Digitais**, ministrada pelo incrível **Professor Bráulio**!
+Bem-vindo(a) ao meu repositório de projetos para a disciplina de **Circuitos Digitais**, ministrada pelo **Professor Bráulio**!
 
 Este espaço é dedicado à documentação e demonstração de diversos circuitos lógicos que desenvolvi.
 
 ---
 
-## 🔬 O que você encontra por aqui:
+## 🔬 JÁ FEITO:
 
-Minha jornada na construção de Multiplexadores (MUX) em cascata, explorando como combinar componentes menores para criar sistemas mais complexos:
+
 
 * ➡️ **Multiplexador (MUX) de 2 Canais**
 * ➡️ **Multiplexador (MUX) de 4 Canais**
@@ -25,4 +25,4 @@ Todos esses projetos foram cuidadosamente projetados e simulados utilizando o so
 
 ---
 
-Espero que este repositório seja útil para entender os conceitos de MUXes e a lógica digital!
+
