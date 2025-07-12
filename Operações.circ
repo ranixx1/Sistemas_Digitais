@@ -6,7 +6,13 @@
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
@@ -54,13 +60,10 @@
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(170,210)" to="(200,210)"/>
-    <wire from="(170,170)" to="(200,170)"/>
-    <wire from="(270,190)" to="(300,190)"/>
-    <comp lib="1" loc="(270,190)" name="XNOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(170,210)" name="Pin">
+    <wire from="(140,330)" to="(170,330)"/>
+    <wire from="(40,350)" to="(70,350)"/>
+    <wire from="(40,310)" to="(70,310)"/>
+    <comp lib="0" loc="(40,350)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(84,384)" name="Text">
@@ -69,16 +72,19 @@
     <comp lib="6" loc="(84,435)" name="Text">
       <a name="text" val="1 + 1 = 1"/>
     </comp>
-    <comp lib="0" loc="(300,190)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(40,310)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(84,417)" name="Text">
       <a name="text" val="1 + 0 = 0"/>
     </comp>
-    <comp lib="0" loc="(170,170)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="0" loc="(170,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(140,330)" name="XNOR Gate">
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="6" loc="(84,399)" name="Text">
       <a name="text" val="0 + 1 = 0"/>
@@ -89,27 +95,22 @@
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(340,190)" to="(370,190)"/>
-    <wire from="(230,170)" to="(280,170)"/>
-    <wire from="(230,210)" to="(280,210)"/>
+    <wire from="(140,320)" to="(170,320)"/>
+    <wire from="(30,300)" to="(80,300)"/>
+    <wire from="(30,340)" to="(80,340)"/>
+    <comp lib="1" loc="(140,320)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="6" loc="(84,417)" name="Text">
       <a name="text" val="1 + 0 = 1"/>
-    </comp>
-    <comp lib="0" loc="(370,190)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(230,210)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(340,190)" name="XOR Gate">
-      <a name="inputs" val="2"/>
     </comp>
     <comp lib="6" loc="(84,435)" name="Text">
       <a name="text" val="1 + 1 = 0"/>
     </comp>
-    <comp lib="0" loc="(230,170)" name="Pin">
+    <comp lib="0" loc="(30,300)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(30,340)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(84,384)" name="Text">
@@ -118,20 +119,25 @@
     <comp lib="6" loc="(84,399)" name="Text">
       <a name="text" val="0 + 1 = 1"/>
     </comp>
+    <comp lib="0" loc="(170,320)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
   </circuit>
   <circuit name="Nor_2">
     <a name="circuit" val="Nor_2"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(290,180)" to="(310,180)"/>
-    <wire from="(190,200)" to="(230,200)"/>
-    <wire from="(190,160)" to="(230,160)"/>
+    <wire from="(40,350)" to="(80,350)"/>
+    <wire from="(40,310)" to="(80,310)"/>
+    <wire from="(140,330)" to="(160,330)"/>
+    <comp lib="0" loc="(40,310)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="6" loc="(84,399)" name="Text">
       <a name="text" val="0 + 1 = 0"/>
-    </comp>
-    <comp lib="0" loc="(190,160)" name="Pin">
-      <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(84,384)" name="Text">
       <a name="text" val="0 + 0 = 1"/>
@@ -139,15 +145,15 @@
     <comp lib="6" loc="(84,435)" name="Text">
       <a name="text" val="1 + 1 = 0"/>
     </comp>
-    <comp lib="0" loc="(190,200)" name="Pin">
+    <comp lib="0" loc="(40,350)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(310,180)" name="Pin">
+    <comp lib="0" loc="(160,330)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(290,180)" name="NOR Gate">
+    <comp lib="1" loc="(140,330)" name="NOR Gate">
       <a name="inputs" val="2"/>
     </comp>
     <comp lib="6" loc="(84,417)" name="Text">
@@ -159,34 +165,34 @@
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(200,230)" to="(230,230)"/>
-    <wire from="(200,270)" to="(230,270)"/>
-    <wire from="(290,250)" to="(310,250)"/>
+    <wire from="(40,350)" to="(70,350)"/>
+    <wire from="(40,310)" to="(70,310)"/>
+    <wire from="(130,330)" to="(150,330)"/>
     <comp lib="6" loc="(84,384)" name="Text">
       <a name="text" val="0 + 0 = 1"/>
     </comp>
-    <comp lib="0" loc="(200,230)" name="Pin">
+    <comp lib="0" loc="(40,310)" name="Pin">
       <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(290,250)" name="NAND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(310,250)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="6" loc="(84,417)" name="Text">
       <a name="text" val="1 + 0 = 1"/>
     </comp>
+    <comp lib="0" loc="(40,350)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="6" loc="(84,435)" name="Text">
       <a name="text" val="1 + 1 = 0"/>
     </comp>
-    <comp lib="0" loc="(200,270)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="0" loc="(150,330)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="6" loc="(84,399)" name="Text">
       <a name="text" val="0 + 1 = 1"/>
+    </comp>
+    <comp lib="1" loc="(130,330)" name="NAND Gate">
+      <a name="inputs" val="2"/>
     </comp>
   </circuit>
 </project>
