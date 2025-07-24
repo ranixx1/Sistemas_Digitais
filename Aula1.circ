@@ -379,8 +379,8 @@
       <a name="labelloc" val="east"/>
     </comp>
   </circuit>
-  <circuit name="BancoReg4bit_completo">
-    <a name="circuit" val="BancoReg4bit_completo"/>
+  <circuit name="BancoReg4bits">
+    <a name="circuit" val="BancoReg4bits"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
@@ -930,13 +930,15 @@
     <comp lib="4" loc="(950,880)" name="D Flip-Flop"/>
     <comp lib="4" loc="(950,2480)" name="D Flip-Flop"/>
   </circuit>
-  <circuit name="BancoReg32bitCompleto">
-    <a name="circuit" val="BancoReg32bitCompleto"/>
+  <circuit name="BancoReg32bits">
+    <a name="circuit" val="BancoReg32bits"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(2550,2330)" to="(2580,2330)"/>
     <wire from="(2770,2560)" to="(2770,3180)"/>
+    <wire from="(3150,2220)" to="(3150,2340)"/>
+    <wire from="(3160,3350)" to="(3160,3470)"/>
     <wire from="(2970,2080)" to="(3130,2080)"/>
     <wire from="(2870,1980)" to="(3130,1980)"/>
     <wire from="(3000,2110)" to="(3000,3000)"/>
@@ -1016,6 +1018,7 @@
     <wire from="(1990,3730)" to="(2580,3730)"/>
     <wire from="(2090,2630)" to="(2090,3000)"/>
     <wire from="(2610,1910)" to="(2680,1910)"/>
+    <wire from="(3170,2060)" to="(3200,2060)"/>
     <wire from="(2930,2040)" to="(3130,2040)"/>
     <wire from="(2500,1630)" to="(2580,1630)"/>
     <wire from="(3030,2140)" to="(3030,3220)"/>
@@ -1320,6 +1323,7 @@
     <wire from="(2500,3380)" to="(2580,3380)"/>
     <wire from="(2080,2640)" to="(2080,3080)"/>
     <wire from="(2610,3370)" to="(2880,3370)"/>
+    <wire from="(3180,3190)" to="(3200,3190)"/>
     <wire from="(2500,1630)" to="(2500,1700)"/>
     <wire from="(2550,2480)" to="(2550,2550)"/>
     <wire from="(2550,1680)" to="(2550,1750)"/>
@@ -1392,6 +1396,12 @@
       <a name="width" val="32"/>
     </comp>
     <comp loc="(2580,3430)" name="Registrador32bits"/>
+    <comp lib="0" loc="(3200,2060)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp loc="(2580,3210)" name="Registrador32bits"/>
     <comp loc="(2580,1970)" name="Registrador32bits"/>
     <comp lib="2" loc="(3180,3190)" name="Multiplexer">
@@ -1409,8 +1419,20 @@
     <comp loc="(2580,2550)" name="Registrador32bits"/>
     <comp loc="(2580,2260)" name="Registrador32bits"/>
     <comp loc="(2580,2400)" name="Registrador32bits"/>
+    <comp lib="0" loc="(3160,3470)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="5"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp loc="(2580,2780)" name="Registrador32bits"/>
     <comp loc="(2580,1680)" name="Registrador32bits"/>
+    <comp lib="0" loc="(3150,2340)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="5"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp loc="(2580,3500)" name="Registrador32bits"/>
     <comp loc="(2580,2040)" name="Registrador32bits"/>
     <comp lib="0" loc="(1890,2810)" name="Pin">
@@ -1419,6 +1441,12 @@
       <a name="tristate" val="false"/>
     </comp>
     <comp loc="(2580,1750)" name="Registrador32bits"/>
+    <comp lib="0" loc="(3200,3190)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp loc="(2580,3720)" name="Registrador32bits"/>
     <comp loc="(2580,2630)" name="Registrador32bits"/>
   </circuit>
